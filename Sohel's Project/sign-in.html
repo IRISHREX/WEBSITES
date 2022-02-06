@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;1,200;1,600&display=swap" rel="stylesheet">
+    <title>SignIn form</title>
+    <link rel="stylesheet" href="sign-in.css">
+    <script src="sign-in.js"></script>
+</head>
+<body onload="mymessage()">
+  <div id="result">
+    <p>Content of the result DIV box will be replaced by the server response</p>
+   <div class="sign-up-form">
+        <img id="image"
+        src="images/TECHSTAR-GROUP.jpg" alt="Logo">
+        <h1>LOG IN</h1>
+        <form id="myForm">
+  
+            <input id="eid" type="email" name="email" value=""  class="input-box" placeholder="Enter your email" onfocus="myColorFunction1(this)" onfocusout="myColorFunction2(this)">
+            <input id="pass" type="password" name="password" value="" class="input-box" placeholder="Enter your password" onfocus="myColorFunction1(this)" onfocusout="myColorFunction2(this)">
+            <p><span><input type="checkbox" name="checkbox" value="True"></span> I agree to the terms and condition</p>
+            <button  id="btn-submit" type="button"  class="sign-btn" value="submit" onmouseover="style.color='#abf5e9'" onmouseout="style.color='white'"  onclick="loadDoc()">SignIn</button>
+          <hr>
+           <button id="btn-register" type="button" class="sign-in-button" value="Register" onmouseover="style.color='#5bfce2'" onmouseout="style.color='black'" onclick="loadDoc()"></button> <a href="sign-up.html" >Sign up</a></button> 
+            
+        </form>
+    </div>  
+    
+    
+    <script>
+     
+
+
+        </script>
+        </head>
+        
+        
+</body>
+</html>

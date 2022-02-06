@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;1,200;1,600&display=swap" rel="stylesheet">
+    <title>sign-up-form</title>
+    <link rel="stylesheet" href="sign-up.css">
+    <script src="sign-up.js"></script>
+</head>
+<js> 
+    <div class="form-body">
+        <img src="images/TECHSTAR-GROUP.jpg" alt="Logo">
+        <h1>Register</h1>
+    <form action="register" method="post" enctype="multipart/form-data"  onsubmit="return myVFunction()">
+        <label for="Username">Enter the Username</label> <br>
+        <input type="text" id="Uname" class="input-box" name="Username"> <br>
+        <label for="email">Enter the Email</label> <br>
+        <input type="email" id="Uemail" class="input-box" name="email"> <br>
+        <label for="password">Enter the password</label> <br>
+        <input type="password" id="Upass" class="input-box" name="password"> <br>
+        <label for="password">Enter the password again</label> <br>
+        <input type="password" id="Urepass" class="input-box" name="re-password"> <br>    
+        <label for="file">Upload your Resume</label> <br><br>
+        <input type="file" id="UFile" name="file" > <br><br><br>
+        <label for="textarea">write about your skills</label> <br>
+        <textarea id="textarea" name="textarea" class="input-box" rows="4" cols="50">
+            </textarea>
+
+        <button type="submit" id="Ubtn" class="sign-in-button"  value="Submit" >SignUp</button> 
+        <hr>
+        <p class="or">OR</p>
+        <p>Do you have an account?  <a href="signIn.html">Sign In</a></p>
+    </form>
+</div>
+<!--js code goes here-->
+<script>
+  
+   
+</script>
+
+</body>
+</html>

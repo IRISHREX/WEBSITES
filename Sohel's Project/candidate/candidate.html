@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="candidate.js"></script>
+    <link rel="stylesheet" href="candidate.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <form action="register" method="post" enctype="multipart/form-data"  onsubmit="return myVFunction()">
+    <div class="bg-container p-2">
+        <div class="container ">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-xl-9">
+                    <h1 class="text-white mb-4">Candidate Profile</h1>
+                    <div class="card" style="border-radius: 15px;">
+                        <div class="card-body">
+                            <div class="row align-items-center pt-4 pb-3">
+                                <div class="col-md-3 ps-5">
+                                    <h6 class="mb-0">Candidate Name</h6>
+                                </div>
+                                <div class="col-md-9 pe-5">
+                                    <input id="candidate_name" type="text" class="form-control form-control-lg" />
+                                </div>
+                            </div>
+                            <hr class="mx-n3">
+                            <div class="row align-items-center py-3">
+                                <div class="col-md-3 ps-5">
+                                    <h6 class="mb-0">Email Address</h6>
+                                </div>
+                                <div class="col-md-9 pe-5">
+                                    <input type="email" id="candidate_email" class="form-control form-control-lg" placeholder="example@example.com" />
+                                </div>
+                            </div>
+                            <hr class="mx-n3">
+                            <div class="row align-items-center py-3">
+                                <div class="col-md-3 ps-5">
+                                    <h6> <label for="status" class="mb-0">Job Role</label></h6>
+                                </div>
+                                <div class="col-md-9 pe-5">
+                                    <select id="status" class="form-control">
+                                        <option value="Active">Active</option>
+                                        <option value="Inactive">Inactive</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <hr class="mx-n3">
+                            <div class="row align-items-center pt-4 pb-3">
+                                <div class="col-md-3 ps-5">
+                                    <h6 class="mb-0">Skills</h6>
+                                </div>
+                                <div class="col-md-9 pe-5">
+                                    <textarea id="candidate_Skills" class="form-control form-control-lg" rows="3" placeholder="Eg:HTML,CSS,JavaScript"> </textarea>
+                                </div>
+                            </div>
+                            <hr class="mx-n3">
+                            <div class="row align-items-center pt-4 pb-3">
+                                <div class="col-md-3 ps-5">
+                                    <h6 class="mb-0">Experience</h6>
+                                </div>
+                                <div class="col-md-9 pe-5">
+                                    <input id="candidate_experience" type="text" class="form-control form-control-lg" />
+                                </div>
+                            </div>
+                            <hr class="mx-n3">
+                            <div class="row align-items-center pt-4 pb-3">
+                                <div class="col-md-3 ps-5">
+                                    <h6 class="mb-0">Education</h6>
+                                </div>
+                                <div class="col-md-9 pe-5">
+                                    <input id="candidate_education" type="text" class="form-control form-control-lg" placeholder="Highest Education" />
+                                </div>
+                            </div>
+                            <hr class="mx-n3">
+                            <div class="row align-items-center py-3">
+                                <div class="col-md-3 ps-5">
+                                    <h6 class="mb-0">Upload CV</h6>
+                                </div>
+                                <div class="col-md-9 pe-5">
+                                    <input class="form-control form-control-lg" id="formFileLg" type="file" />
+                                    <div class="small text-muted mt-2">Upload your CV/Resume or any other relevant file. Max file size 50 MB</div>
+                                </div>
+                            </div>
+                            <hr class="mx-n3">
+                            <div class="px-5 py-4 d-flex justify-content-center">
+                                <button type="submit" id="submit_button" class="btn btn-primary btn-lg" >Save Application</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+ </form>
+
+</body>
+
+</html>
